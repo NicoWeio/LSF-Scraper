@@ -7,14 +7,14 @@ BASE_URL = 'https://www.lsf.tu-dortmund.de/qisserver/rds'
 def find_events(name, semester):
     queryparams = {
         'state': 'wsearchv',
-        'search': '1',
+        'search': 1,
         'subdir': 'veranstaltung',
         'alias_pord.pordnr': 'r_zuordpos.pordnr',
         'veranstaltung.dtxt': name.lower(),
         'veranstaltung.semester': semester,
         'alias_pord.pordnr': 'r_zuordpos.pordnr',
-        'P_start': '0',
-        'P_anzahl': '10',
+        'P_start': 0,
+        'P_anzahl': 10,
         'P.sort': '',
         '_form': 'display',
     }
